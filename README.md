@@ -2,6 +2,14 @@
 
 Native mobile app developed with React Native, using Redux and React Navigation.
 
+It uses the libraries:
+  - react-navigation
+  - react-native-gesture-handler
+  - react-redux
+  - react-native-image-picker
+  - react-native-ionicons
+  
+
 # Install
 
 
