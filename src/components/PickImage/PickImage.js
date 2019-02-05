@@ -6,6 +6,10 @@ import CameraRollPicker from 'react-native-camera-roll-picker';
 import imagePlaceholder from "../../assets/beautiful-place.jpg";
 
 class PickImage extends Component {
+  
+  constructor(props) {
+    super(props);
+  }
 
   state = {
     pickedImage: null
@@ -20,6 +24,7 @@ class PickImage extends Component {
             this.setState({
               pickedImage: { uri: res.uri }
             });
+            this.props.onImagePicked({uri: res.uri, base64: res.data});
           }
       });
   }
@@ -40,14 +45,14 @@ class PickImage extends Component {
         </View>
         <View style={styles.button}>
           <Button title="Pick Image" onPress={this.pickImageHandler} />
-          <CameraRollPicker
+          {/* <CameraRollPicker
           groupTypes='SavedPhotos'
           maximum={1}
           selected={this.state.pickedImage}
           assetType='Photos'
           imagesPerRow={3}
           imageMargin={5}
-          callback={this.getSelectedImages} />
+          callback={this.getSelectedImages} /> */}
         </View>
       </View>
     );
