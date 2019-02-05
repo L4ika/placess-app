@@ -13,8 +13,14 @@ import { deletePlace } from "../store/actions/index";
 
 class DetailScreen extends React.Component {
 
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: navigation.getParam('title', 'Details')
+    };
+  }
+
   componentDidMount() {
-    
+   
   }
 
   placeDeletedHandler = () => {
@@ -27,6 +33,8 @@ class DetailScreen extends React.Component {
   }
 
   render() {
+
+   
 
     const { navigation } = this.props;
     const select = navigation.getParam('selectedPlace', 'NO-ID');

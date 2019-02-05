@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/capitole/gitrepo/Places/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "/home/capitole/gitrepo/placess-app/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/17c5d240c4dec4faf57a6bf72e7f7ae9/res/values-en-rIN/values-en-rIN.xml",

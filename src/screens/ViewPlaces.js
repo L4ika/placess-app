@@ -5,17 +5,15 @@ import PlaceList from '../components/PlaceList/PlaceList';
 
 
 class ViewPlaces extends React.Component {
-  constructor(props) {
-    super(props);
-  
-  }
+
+
   onItemSelectedHandler = key => {
         
     const selPlace = this.props.places.find(place => {
         return place.key === key;
     });
 
-    this.props.navigation.navigate(  'Details' , { selectedPlace: selPlace })
+    this.props.navigation.navigate(  'Details' , { selectedPlace: selPlace, title: selPlace.name })
   }
 
 render() {

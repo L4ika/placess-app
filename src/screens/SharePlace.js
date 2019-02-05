@@ -9,8 +9,9 @@ import { connect } from 'react-redux';
 import PlaceInput from '../components/PlaceInput/PlaceInput';
 
 import { addPlace } from "../store/actions/index";
-import MainText from "../components/UI/MainText/MainText";
+
 import HeadingText from "../components/UI/HeadingText/HeadingText";
+import PickImage from '../components/PickImage/PickImage';
 
 
 class SharePlace extends React.Component {
@@ -42,7 +43,7 @@ class SharePlace extends React.Component {
         <View style={styles.container}>
          
         <HeadingText>Share a Place with us!</HeadingText>
-
+        <PickImage />
           <PlaceInput
             placeName={this.state.placeName}
             onChangeText={this.placeNameChangedHandler}
