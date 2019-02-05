@@ -9,7 +9,7 @@ Native mobile app developed with React Native, using Redux and React Navigation.
 cd projectname
 npm install: it will create node_modules folder
 npm eject: it will create android and ios folders
-npm link: it will write the dependencies for android and ios build.gradle files.
+react-native link: it will write the dependencies for android and ios build.gradle files.
 ```
 
 
